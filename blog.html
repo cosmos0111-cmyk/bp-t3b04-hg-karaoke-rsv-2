@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="화곡 가라오케 예약 꿀팁 대방출! bro들이랑 더 재밌게 노는 법, 실시간 예약 필수인 이유까지 알차게 담았습니다. 화곡동 노래방 찐맛집 경험담.">
+    <meta name="keywords" content="화곡 가라오케, 화곡 노래방, 화곡동 가라오케 예약, 화곡 가라오케 추천, 화곡 bro 가라오케, 24시 가라오케 화곡, 가라오케 팁">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b04-hg-karaoke-blog.vercel.app">
+    <meta property="og:title" content="화곡 가라오케 블로그 | bro 노하우">
+    <meta property="og:description" content="화곡 가라오케 찐 경험담과 예약 꿀팁. 혼자서도 신나게? 아니, bro랑 가야 제맛!">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://t3b04-hg-karaoke-blog.vercel.app">
+    <title>블로그 | 화곡 가라오케 예약 · bro 노하우</title>
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Arial Black', 'Impact', 'Helvetica', sans-serif;
+            background: #0c0c0c;
+            color: #e0e0e0;
+            line-height: 1.4;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        /* ---------- GRAND SPACE ---------- */
+        section, header, footer, nav, main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 1.5rem;
+        }
+        @media (max-width: 768px) {
+            section, header, footer, nav, main {
+                padding: 0.75rem 1rem;
+            }
+        }
+        .section-gap {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        /* ---------- TYPOGRAPHY (brutal) ---------- */
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: -0.03em;
+            border-bottom: 4px solid #ff006e;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #ffbe0b;
+        }
+        h2 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+            border-left: 6px solid #ff006e;
+            padding-left: 0.75rem;
+            margin: 2rem 0 1rem;
+            color: #ffbe0b;
+        }
+        h3 {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fb5607;
+        }
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
+            color: #d4d4d4;
+        }
+        a {
+            color: #ff006e;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        a:hover {
+            color: #ffbe0b;
+        }
+        /* ---------- LAYOUT ---------- */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #1a1a2e;
+            border-bottom: 3px solid #ff006e;
+            position: relative;
+            z-index: 10;
+        }
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffbe0b;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 0.25rem 0.5rem;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            border-color: #ff006e;
+            color: #ffbe0b;
+        }
+        .hamburger-menu {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #ffbe0b;
+            background: none;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #16213e;
+                padding: 1rem;
+                margin-top: 0.5rem;
+                border: 2px solid #ff006e;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff006e;
+            color: #0c0c0c;
+            padding: 0.5rem 1.2rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 3px solid #ffbe0b;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: #ffbe0b;
+            color: #0c0c0c;
+            border-color: #ff006e;
+        }
+        main {
+            flex: 1;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+        }
+        .blog-post {
+            background: #1e1e2f;
+            border: 3px solid #ff006e;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .blog-post .meta {
+            font-size: 0.9rem;
+            color: #9a9a9a;
+            margin-bottom: 1.5rem;
+            font-family: 'Courier New', monospace;
+        }
+        .blog-post .meta span {
+            margin-right: 1rem;
+        }
+        .blog-post blockquote {
+            border-left: 5px solid #ffbe0b;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #fb5607;
+        }
+        .blog-post ul {
+            list-style: square;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post ul li {
+            margin-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #ff006e22;
+            padding: 0 0.3rem;
+        }
+        footer {
+            background: #1a1a2e;
+            border-top: 3px solid #ff006e;
+            text-align: center;
+            padding: 1.5rem;
+            color: #9a9a9a;
+        }
+        footer a {
+            color: #ff006e;
+        }
+        .tag {
+            display: inline-block;
+            background: #ff006e;
+            color: #0c0c0c;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 0.3rem;
+            margin-bottom: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">화곡 KARAOKE</div>
+                <button class="hamburger-menu" aria-label="메뉴 열기" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/reservation">예약</a></li>
+                    <li><a href="/blog">블로그</a></li>
+                    <li><a href="/about">소개</a></li>
+                </ul>
+                <a href="tel:01012345678" class="tel-link">📞 예약전화</a>
+            </nav>
+        </header>
+        <main>
+            <section class="section-gap">
+                <h1>BRO의 가라오케 꿀팁</h1>
+                <p>화곡에서 진짜 노는 법, 알려줄게? <span class="highlight">화곡 가라오케 예약</span>은 기본이야. 근데 문제는 어떻게 더 쩔게 놀지 그거잖아.</p>
+                <article class="blog-post">
+                    <div class="meta">
+                        <span>✏️ bro 작성</span>
+                        <span>📅 2025.02.15</span>
+                        <span>🏷️ <span class="tag">꿀팁</span><span class="tag">화곡</span><span class="tag">가라오케</span></span>
+                    </div>
+                    <h2>노래방에서 찐친 만드는 법</h2>
+                    <p>있잖아, 나도 처음엔 혼자 가라오케 가는 거 좀 오바인 줄 알았어. 근데 화곡에 <strong>24시 가라오케</strong> 생기고 부터는 새벽에 일 끝나고 혼자라도 가게 되더라. 근데 진짜 꿀은 역시 bro들이랑 같이 가는 거야.</p>
+                    <blockquote>
+                        "하드한 하루 끝에, 화곡 가라오케 예약 한 통이면 분위기 확 바뀐다. 내가 보증함."
+                    </blockquote>
+                    <h3>1. 예약은 무조건 미리</h3>
+                    <p>화곡 가라오케 인기 짱이라서 주말엔 웨이팅 기본 30분이야. 전화 한 통이면 <strong>실시간 예약</strong> 되니까, 놀기 전에 꼭 전화해. 나도 한 번은 예약 안 하고 갔다가 발길 돌린 적 있음.</p>
+                    <h3>2. 마이크는 돌려 써야 제맛</h3>
+                    <p>한 곡만 계속 부르는 bro? no no. 분위기 깨지니까 다같이 돌아가면서. 락발라드, 힙합, 트로트 다양하게 준비해가. 화곡 가라오케는 음질도 좋아서 어떤 장르든 찢는다.</p>
+                    <h3>3. 이 노래는 꼭 넣어</h3>
+                    <ul>
+                        <li><strong>버즈 - 겁쟁이</strong> (단체 떼창)</li>
+                        <li><strong>소찬휘 - Tears</strong> (내공 뽐내기)</li>
+                        <li><strong>릴러말즈 - 비워</strong> (힙합은 필수)</li>
+                    </ul>
+                    <p>이 세 곡이면 순삭임. 그리고 마지막 곡은 무조건 <em>다 같이 부를 수 있는 노래</em>로 끝내야 깔끔. 그래야 다음에도 또 오게 되더라.</p>
+                    <h3>4. 매너가 최고야</h3>
+                    <p>노래방 매너? 간단해. 남이 부를 때 떠들지 말고, 박수 쳐주고, 자기 순서 아닐 때는 술잔 조심. 우리 bro들은 매너 좋기로 소문났잖아. 화곡 가라오케에서 찐팬 되고 싶으면 기본은 지키자.</p>
+                    <p>아, 그리고 중요한 거 하나! <a href="tel:01012345678">지금 전화</a>하면 예약 바로 해준다니까? bro들은 후회 없게 행동하자. 끝까지 읽어준 너도 내 bro다.</p>
+                </article>
+                <p style="text-align:right; margin-top:2rem;">— 다음 편에서는 '화곡 가라오케 단체 손님 대처법' 들고 올게. 기대해 bro.</p>
+            </section>
+        </main>
+        <footer>
+            <p>© 2025 화곡 가라오케 예약 | bro 스페이스</p>
+            <p><a href="tel:01012345678">📞 예약 문의 24시</a> | <a href="https://t3b04-hg-karaoke-rsv-2.vercel.app">공식사이트</a></p>
+            <p style="font-size:0.8rem; margin-top:0.5rem;">화곡동 노래방 찐맛집, bro 친화적 공간.</p>
+        </footer>
+    </div>
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
