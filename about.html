@@ -3,354 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>화곡 가라오케 예약 — 위치·시설 정보 및 지역별 방문 가이드</title>
-    <meta name="description" content="화곡 가라오케 예약 전 알아야 할 위치, 주차, 음향 시설 스펙 및 인원별 룸 구성 정보. 화곡역 및 강서 지역 특화 방문 팁과 맞춤형 안내를 확인하세요.">
-    <meta name="keywords" content="화곡 가라오케 예약, 화곡 가라오케 정보, 화곡 가라오케 위치, 화곡 가라오케 시설">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>화곡 가라오케 예약: 실패 없는 공간 선정을 위한 실전 가이드</title>
+    <meta name="description" content="화곡 가라오케 예약을 고민 중이신가요? 소규모 모임부터 대규모 회식까지, 인원과 시간대별로 달라지는 예약 핵심 기준과 처음 방문하는 분들을 위한 필수 체크리스트를 확인하세요.">
+    <meta name="keywords" content="화곡 가라오케 예약, 화곡 노래방 예약, 화곡 유흥, 인원별 가라오케, 시간대별 예약 가이드">
     <link rel="canonical" href="https://hwagok-song-2.link-hub.org/about.html">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-charcoal-silver">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="화곡 가라오케 예약 — 위치·시설 정보 및 지역별 방문 가이드">
-    <meta property="og:description" content="화곡 가라오케 예약 전 알아야 할 위치, 주차, 음향 시설 스펙 및 인원별 룸 구성 정보. 화곡역 및 강서 지역 특화 방문 팁과 맞춤형 안내를 확인하세요.">
-    <meta property="og:url" content="https://hwagok-song-2.link-hub.org/about.html">
-
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "화곡에서 가라오케 예약 시 가장 먼저 고려할 점은 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "방문 인원수와 모임의 성격을 명확히 하는 것이 가장 중요합니다. 인원에 맞는 룸 크기 확보와 이동 동선을 고려해야 합니다."
+        }
+      }]
+    }
+    </script>
     <style>
-        :root {
-            --bg-primary: #121214;
-            --bg-card: #1c1c1f;
-            --bg-card-hover: #26262a;
-            --accent-silver: #e2e8f0;
-            --accent-muted: #94a3b8;
-            --text-main: #f8fafc;
-            --text-sub: #cbd5e1;
-            --border-color: #2e2e33;
-            --border-highlight: #475569;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-primary);
-            color: var(--text-main);
-            font-family: var(--font-family);
-            line-height: 1.7;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        /* Nav */
-        .r-nav-wrap {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(18, 18, 20, 0.85);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .r-nav-inner {
-            max-width: 1080px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 1.5rem;
-        }
-
-        .r-nav-brand {
-            font-size: 1.15rem;
-            font-weight: 700;
-            color: var(--accent-silver);
-            text-decoration: none;
-            letter-spacing: -0.02em;
-        }
-
-        .r-nav-links {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none;
-        }
-
-        .r-nav-links a {
-            color: var(--accent-muted);
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s ease;
-        }
-
-        .r-nav-links a:hover,
-        .r-nav-links a.active {
-            color: var(--accent-silver);
-        }
-
-        /* Container & Layout */
-        .t-hero-voc4 {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 4rem 1.5rem 3rem 1.5rem;
-        }
-
-        .r-wrap-3ybq-label {
-            display: inline-block;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--accent-muted);
-            margin-bottom: 0.75rem;
-            border: 1px solid var(--border-color);
-            padding: 0.25rem 0.75rem;
-            border-radius: 999px;
-        }
-
-        h1, h2, h3, .v-body-wgs2-font {
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            color: var(--text-main);
-        }
-
-        h1 {
-            font-size: 2.25rem;
-            line-height: 1.3;
-            margin-bottom: 1.25rem;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        h3 {
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            color: var(--accent-silver);
-        }
-
-        p {
-            color: var(--text-sub);
-            font-size: 1.05rem;
-            margin-bottom: 1.25rem;
-            word-break: keep-all;
-        }
-
-        .t-txt-x5m9-spacer {
-            height: 2rem;
-        }
-
-        /* Content Blocks & Cards */
-        .v-main-exi1-border {
-            position: relative;
-            background-color: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            padding: 1.75rem;
-            margin-bottom: 1.5rem;
-            transition: border-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .v-main-exi1-border:hover {
-            border-color: var(--border-highlight);
-            background-color: var(--bg-card-hover);
-        }
-
-        .v-main-exi1-border::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 5%;
-            width: 90%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--border-color), transparent);
-        }
-
-        .grid-two-col {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-
-        .info-list {
-            list-style: none;
-            margin-bottom: 1rem;
-        }
-
-        .info-list li {
-            position: relative;
-            padding-left: 1.25rem;
-            color: var(--text-sub);
-            margin-bottom: 0.5rem;
-            font-size: 0.98rem;
-        }
-
-        .info-list li::before {
-            content: '•';
-            position: absolute;
-            left: 0;
-            color: var(--accent-muted);
-        }
-
-        /* Buttons & CTA */
-        .v-btn-nv1e {
-            display: inline-block;
-            background-color: var(--accent-silver);
-            color: var(--bg-primary);
-            font-weight: 600;
-            padding: 0.85rem 1.75rem;
-            border-radius: 8px;
-            text-decoration: none;
-            transition: opacity 0.2s ease;
-            margin-top: 1rem;
-        }
-
-        .v-btn-nv1e:hover {
-            opacity: 0.9;
-        }
-
-        .v-btn-nv1e::first-letter {
-            font-size: 110%;
-        }
-
-        /* FAQ Section */
-        .faq-item {
-            border-bottom: 1px solid var(--border-color);
-            padding: 1.25rem 0;
-        }
-
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-
-        .faq-q {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: var(--accent-silver);
-            margin-bottom: 0.5rem;
-        }
-
-        .faq-a {
-            color: var(--text-sub);
-            font-size: 0.98rem;
-            margin-bottom: 0;
-        }
-
-        /* Footer */
-        footer {
-            max-width: 1080px;
-            margin: 4rem auto 0 auto;
-            padding: 2rem 1.5rem;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            color: var(--accent-muted);
-            font-size: 0.875rem;
-        }
-
-        @media (max-width: 768px) {
-            h1 { font-size: 1.75rem; }
-            h2 { font-size: 1.35rem; }
-            .grid-two-col { grid-template-columns: 1fr; }
-            .t-hero-voc4 { padding-top: 2rem; }
-            .r-nav-inner { flex-direction: column; gap: 0.75rem; }
-        }
+        :root { --bg: #0a0a0a; --accent: #00ff41; --text: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: sans-serif; line-height: 1.6; }
+        header { border-bottom: 2px solid var(--accent); padding: 2rem; }
+        .m-side-tdu0 { display: flex; gap: 20px; list-style: none; }
+        h1 { color: var(--accent); font-size: 2.5rem; margin-bottom: 1rem; }
+        .x-hero-29lu { padding: 4rem 2rem; border: 1px solid var(--accent); }
+        section { padding: 3rem 2rem; }
+        h2 { border-left: 5px solid var(--accent); padding-left: 1rem; margin-bottom: 2rem; }
+        .n-img-9kq3 { width: 100%; height: 300px; background: #222; margin: 2rem 0; display: flex; align-items: center; justify-content: center; }
+        .v-side-mpvc { display: block; padding: 1.5rem; border: 1px solid #444; margin-bottom: 1rem; cursor: pointer; }
+        .v-side-mpvc:hover { border-color: var(--accent); }
+        footer { padding: 2rem; text-align: center; font-size: 0.8rem; }
+        @media (max-width: 768px) { .m-side-tdu0 { flex-direction: column; } }
     </style>
+  <meta property="og:url" content="https://hwagok-song-2.link-hub.org/about.html">
 </head>
 <body>
-
-    <!-- NAV -->
-    <nav class="r-nav-wrap">
-        <div class="r-nav-inner">
-            <a href="/" class="r-nav-brand">화곡 가라오케 안내</a>
-            <ul class="r-nav-links">
+    <header>
+        <nav>
+            <ul class="m-side-tdu0">
                 <li><a href="/">홈</a></li>
-                <li><a href="/info.html" class="active">정보</a></li>
-                <li><a href="/pricing.html">비용 안내</a></li>
-                <li><a href="/guide.html">예약 가이드</a></li>
+                <li><a href="/guide">예약 가이드</a></li>
+                <li><a href="/location">화곡 지역 정보</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="t-hero-voc4">
-        <span class="r-wrap-3ybq-label">LOCATION &amp; SPECIFICATIONS</span>
-        <h1>화곡 가라오케 예약 — 위치·시설 스펙 및 지역 방문 정보</h1>
-        
-        <p>화곡 가라오케 예약을 진행할 때 화곡역 일대 및 강서권 주요 동선과의 접근성, 실제 룸 내부 시설의 크기와 음향 세팅, 주차 지원 여부는 모임의 만족도를 결정짓는 핵심 요소입니다. 사전에 객관적인 위치 환경과 시스템 스펙을 파악해두면 당일 동선의 혼선을 줄이고 목적에 꼭 맞는 최적의 공간을 선택할 수 있습니다.</p>
-        <p>어설픈 겉모습에 속아 비좁은 공간이나 오래된 음향 시설로 불만을 겪지 않으려면, 예약 전 체크해야 할 인프라 정보와 강서 지역 특유의 이용 환경을 꼼꼼하게 따져보는 것이 필수적입니다.</p>
+    <main>
+        <section class="x-hero-29lu">
+            <h1>화곡 가라오케 예약, 현명하게 성공하는 법</h1>
+            <p>화곡동 일대에서 모임을 계획할 때 가장 고민되는 부분이 바로 적절한 장소의 선택입니다. 단순히 노래를 부르는 공간을 넘어, 일행과 편안하게 대화를 나누고 즐거운 시간을 보낼 수 있는 곳을 고르는 기준을 정리해 드립니다.</p>
+            <p>예약은 단순히 시간을 잡는 것이 아니라, 모임의 분위기를 결정짓는 첫 번째 단추입니다. 방문 목적과 인원 구성에 따라 최적의 환경이 달라지므로, 아래의 가이드를 꼼꼼히 체크해 보시기 바랍니다.</p>
+        </section>
 
-        <div class="t-txt-x5m9-spacer"></div>
+        <section>
+            <h2>인원별 최적의 룸 선택 기준</h2>
+            <p>3인 이하의 소규모 모임이라면 아늑하고 집중도가 높은 룸을 선택하는 것이 좋습니다. 너무 넓은 공간은 오히려 대화의 흐름을 끊을 수 있기 때문에, 적절한 밀도감이 있는 공간이 만족도가 높습니다.</p>
+            <p>반면 5인 이상의 단체 회식이나 모임은 사전에 룸의 크기와 테이블 배치를 확인해야 합니다. 특히 인원이 많을수록 화장실과의 거리나 흡연 시설의 위치 등 편의 시설 접근성이 전체적인 모임 만족도를 크게 좌우하게 됩니다.</p>
+            <div class="n-img-9kq3">룸 타입별 배치 예시 이미지 공간</div>
+        </section>
 
-        <h2>1. 화곡역 상권 접근성 및 교통·주차 안내</h2>
-        <p>화곡동 상권은 5호선 화곡역을 중심축으로 형성되어 있어 대중교통 이용객과 자차 방문객 모두에게 매우 유리한 입지를 제공합니다. 화곡역 주요 출구 인근은 밤 시간대 차량 이동이 비교적 원활하며, 타 지역에서 접근하기에도 용이한 교통망을 갖추고 있습니다.</p>
-        <p>주차의 경우 업장 건물 내 전용 주차장을 갖춘 곳도 있으나, 상권 특성상 인근 공영주차장이나 발렛 파킹 연계 서비스를 제공하는 경우가 많습니다. 자차로 이동 시 수용 가능한 차량 대수와 발렛 비용 발생 여부를 사전에 미리 확인해 두는 것이 차질 없는 입장을 위해 안전합니다.</p>
+        <section>
+            <h2>시간대별 예약의 핵심 포인트</h2>
+            <p>평일 이른 저녁 시간대는 상대적으로 예약이 수월하며, 조용한 분위기에서 일행과 깊은 대화를 나누기에 적합합니다. 서비스 시간이나 기타 혜택을 조율하기에도 비교적 여유로운 시기입니다.</p>
+            <p>주말이나 금요일 밤 시간대는 경쟁이 치열하므로 최소 2~3일 전 예약이 필수입니다. 늦은 시간 방문할 경우, 대중교통 이용 여부나 대리운전 호출 환경을 미리 파악해 두는 것이 귀갓길의 스트레스를 줄이는 지름길입니다.</p>
+        </section>
 
-        <div class="grid-two-col">
-            <div class="v-main-exi1-border">
-                <h3>대중교통 접근성</h3>
-                <ul class="info-list">
-                    <li>지하철 5호선 화곡역 도보 3~5분 거리 내 주요 업장 위치</li>
-                    <li>강서·양천·신월 방면 버스 노선 밀집 구역</li>
-                    <li>심야 시간대 택시 승차 및 대기 용이한 도로 환경</li>
-                </ul>
-            </div>
-            <div class="v-main-exi1-border">
-                <h3>주차 및 발렛 환경</h3>
-                <ul class="info-list">
-                    <li>건물 내 자체 주차장 보유 또는 외부 지정 주차장 운영</li>
-                    <li>피크 타임(20시~23시) 진입 시 발렛 서비스 이용 권장</li>
-                    <li>차량 대수가 많은 단체 방문 시 사전 주차 공간 확보 필수</li>
-                </ul>
-            </div>
-        </div>
-
-        <h2>2. 룸 규모별 구성 및 음향·인테리어 스펙</h2>
-        <p>공간의 쾌적함은 방문 인원수에 딱 맞는 룸 선택에서 시작됩니다. 화곡 가라오케는 소규모 모임부터 대형 비즈니스 회식까지 소화할 수 있도록 다채로운 룸 구조를 갖추고 있으며, 최신 음향 반주기와 프리미엄 스피커 세팅으로 수준 높은 음향 환경을 제공합니다.</p>
-        <p>단순히 테이블 크기만 넓은 것이 아니라, 좌석 배치가 효율적인지, 조명 조절 및 에어컨·환기 시설이 독립적으로 구비되어 있는지 확인해야 오랜 시간 답답함 없이 쾌적하게 모임을 즐길 수 있습니다.</p>
-
-        <div class="v-main-exi1-border">
-            <h3>인원별 맞춤형 룸 인프라</h3>
-            <p><strong>소형 룸 (1~3인):</strong> 아늑하고 독립된 구조로 혼자 방문하거나 연인·소수 인원이 조용하게 음향 시설을 즐기기에 최적화된 공간입니다.</p>
-            <p><strong>중형 룸 (4~7인):</strong> 친구 모임이나 소규모 회식에 적합하며, 넉넉한 소파 배열과 동선이 확보되어 가장 선호도가 높은 타입입니다.</p>
-            <p><strong>대형·VIP 룸 (8인 이상):</strong> 대형 모니터 2대 이상과 다중 스피커 시스템, 최상급 소파를 배치하여 단체 행사나 비즈니스 접대 자리에 부합하는 공간감과 격식을 갖췄습니다.</p>
-        </div>
-
-        <h2>3. 이용 목적 및 시점별 방문 팁</h2>
-        <p>방문 시점과 목적에 따라 룸 대여 조건이나 현장 분위기가 달라질 수 있습니다. 평일 저녁은 비교적 여유롭고 프라이빗하게 이용할 수 있는 반면, 금요일과 주말 저녁은 예약 수요가 몰리므로 원하는 룸 타입을 확보하기 위해 조기 예약이 필수적입니다.</p>
-        <p>비즈니스 접대나 중요한 격식이 필요한 자리라면 독립성이 높은 유닛을 사전 지정하고, 2차 회식이나 생일 파티 등 분위기가 중요한 모임이라면 핀조명 및 무대 조명 연출이 강화된 룸을 요청하는 것이 팁입니다.</p>
-
-        <h2>4. 자주 묻는 질문 (FAQ)</h2>
-        <div class="v-main-exi1-border">
-            <div class="faq-item">
-                <div class="faq-q">Q. 당일 현장 방문으로도 바로 입장이 가능한가요?</div>
-                <div class="faq-a">A. 평일 조기 시간대에는 즉시 입장이 가능할 수 있으나, 주말이나 피크 타임에는 룸이 만석일 확률이 높습니다. 원하는 시간에 대기 없이 입장하시려면 최소 1~2시간 전 사전 예약을 권장합니다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Q. 대형 주차나 픽업 서비스 지원이 되나요?</div>
-                <div class="faq-a">A. 방문 업장에 따라 차종 및 인원에 맞춘 픽업 서비스를 제공하거나 발렛 주차를 지원합니다. 자차 이용 시 차량 수량과 함께 사전 문의하시면 편안한 주차 안내를 받아보실 수 있습니다.</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">Q. 음향 및 미디어 장비 사양을 따로 지정할 수 있나요?</div>
-                <div class="faq-a">A. 최신 반주기 및 마이크 상태는 모든 룸에 유지되고 있으나, 특정 조명 연출이나 클럽 모드 기능 등 특수 음향 장치가 구비된 룸을 희망하실 경우 예약 단계에서 말씀해 주시면 맞춤 배정이 가능합니다.</div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.1rem; color: var(--accent-silver);">화곡 가라오케 예약 및 최신 룸 현황 문의</p>
-            <a href="/guide.html" class="v-btn-nv1e">상세 예약 가이드 확인하기</a>
-        </div>
+        <section>
+            <h2>방문 전 필수 체크리스트</h2>
+            <div class="v-side-mpvc">1. 인원 확정 및 예산 설정: 참석 인원을 정확히 파악하여 룸 사이즈를 결정하세요.</div>
+            <div class="v-side-mpvc">2. 위치 및 주차 안내: 화곡 내 주요 이동 경로를 확인하고 주차 가능 여부를 사전에 문의하세요.</div>
+            <div class="v-side-mpvc">3. 주류 및 안주 구성: 선호하는 주류 라인업이 있는지, 안주 구성은 모임 성격에 맞는지 확인하세요.</div>
+            <div class="v-side-mpvc">4. 서비스 문의: 첫 방문이라면 예약 시 문의사항을 미리 정리해 두는 것이 좋습니다.</div>
+        </section>
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <p>&copy; 화곡 가라오케 정보 안내 센터. All rights reserved.</p>
+        <p>&copy; 2024 화곡 가라오케 정보 가이드. 본 콘텐츠는 정보 제공을 목적으로 합니다.</p>
     </footer>
-
 </body>
 </html>
